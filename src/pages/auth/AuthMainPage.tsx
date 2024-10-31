@@ -18,7 +18,7 @@ export default function AuthMainPage() {
         <img className="object-fill h-16" src={NaverLoginButton} alt="" />
       </Link>
       <Link
-        to={`https://kauth.kakao.com/oauth/authorize?client_id=${process.env.REACT_APP_KAKAO_REST_API_KEY}&redirect_uri=http://localhost:3000/auth/kakao/login&response_type=code`}
+        to={`https://kauth.kakao.com/oauth/authorize?client_id=${import.meta.env.VITE_KAKAO_REST_API_KEY}&redirect_uri=http://localhost:3000/auth/kakao/login&response_type=code`}
         className="flex justify-center"
       >
         <img className="object-fill h-16" src={KakaoLoginButton} alt="" />

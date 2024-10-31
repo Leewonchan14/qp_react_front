@@ -4,7 +4,7 @@ import RefreshManager from './refresh.manager.api';
 import userApi from './users.api';
 import { getLocalToken, setLocalToken } from '../utils/tokenManager';
 
-const base_url = process.env.REACT_APP_API_BASE_URL;
+const base_url = import.meta.env.VITE_API_BASE_URL;
 
 const refreshManager = RefreshManager.getInstance();
 
