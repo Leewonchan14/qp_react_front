@@ -11,9 +11,11 @@ RUN npm install
 
 ARG VITE_API_BASE_URL
 ARG VITE_KAKAO_REST_API_KEY
+ARG VITE_REDIRECT_URL
 
 ENV VITE_API_BASE_URL=$VITE_API_BASE_URL
 ENV VITE_KAKAO_REST_API_KEY=$VITE_KAKAO_REST_API_KEY
+ENV VITE_REDIRECT_URL=$VITE_REDIRECT_URL
 
 COPY . .
 
@@ -25,6 +27,6 @@ RUN npm run build
 
 FROM nginx:latest as prod
 
-COPY --from=build /app/build /usr/share/nginx/html
+COPY --from=build /app/dist /usr/share/nginx/html
 
 CMD ["nginx", "-g", "daemon off;"]
