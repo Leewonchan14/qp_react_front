@@ -7,7 +7,7 @@ ENV NODE_OPTIONS=--max-old-space-size=4096
 
 COPY ./package.json ./package.json
 
-RUN npm install -production
+RUN npm install
 
 ARG REACT_APP_API_BASE_URL
 ARG REACT_APP_KAKAO_REST_API_KEY
@@ -19,9 +19,9 @@ COPY . .
 
 RUN npm run build
 
-FROM build as dev
+# FROM build as dev
 
-CMD ["npm", "run", "serve"]
+# CMD ["npm", "run", "serve"]
 
 FROM nginx:latest as prod
 
