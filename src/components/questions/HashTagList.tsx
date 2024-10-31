@@ -1,3 +1,4 @@
+import React from 'react';
 import { HashTagsResponse } from '../../apis/questions.api';
 
 export default function HashTagList({

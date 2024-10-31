@@ -1,7 +1,8 @@
-import KakaoLoginButton from '../../assets/kakao_login_button.png';
-import NaverLoginButton from '../../assets/naver_login.png';
-import Logo from '../../assets/logo.png';
+import React from 'react';
 import { Link } from 'react-router-dom';
+import KakaoLoginButton from '../../assets/kakao_login_button.png';
+import Logo from '../../assets/logo.png';
+import NaverLoginButton from '../../assets/naver_login.png';
 
 export default function AuthMainPage() {
   return (

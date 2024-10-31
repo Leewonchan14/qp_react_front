@@ -1,5 +1,6 @@
 import { Outlet } from 'react-router-dom';
 import useAutoLogin from '../hooks/users/useAutoLogin';
+import React from 'react';
 
 export default function MainLayout() {
   const { isFetching, isLoading } = useAutoLogin();

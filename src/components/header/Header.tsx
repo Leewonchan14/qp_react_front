@@ -1,3 +1,4 @@
+import React from 'react';
 import Logo from '../../assets/logo.png';
 import useGoHome from '../../hooks/navigate/useGoHome';
 import SearchBar from './SearchBar';

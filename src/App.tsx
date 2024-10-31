@@ -1,3 +1,4 @@
+import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import AuthLayout from './layouts/AuthLayout';
@@ -8,8 +9,8 @@ import KakaoLoginRedirectPage from './pages/auth/KakaoLoginPage';
 import HomePage from './pages/home/HomePage';
 import NotFound from './pages/not-found';
 import QuestionPage from './pages/question/QuestionDetailPage';
-import SearchPage from './pages/search/SearchPage';
 import MakeQuestionPage from './pages/question/QuestionMake/MakeQuestionPage';
+import SearchPage from './pages/search/SearchPage';
 
 function App() {
   return (

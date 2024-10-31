@@ -1,3 +1,4 @@
+import React from 'react';
 import QuestionsList from '../../components/questions/QuestionsList';
 import useFetchQuestions from '../../hooks/questions/useFetchQuestions';
 
