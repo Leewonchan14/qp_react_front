@@ -55,7 +55,7 @@ export default function useMakeQuestion() {
 
   const handleOnEnter = useCallback(
     (e: React.KeyboardEvent<HTMLInputElement>) => {
-      if (e.key === 'Enter') {
+      if (e.key === 'Enter' && !e.nativeEvent.isComposing) {
         e.preventDefault();
         if (
           getValues().hashTags.find(
